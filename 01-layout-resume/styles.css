@@ -149,19 +149,19 @@ img {
 
 @keyframes move {
     0% {
-        left: 70%;
+        left: 60%;
         top: -10%;
     }
     50% {
-        left: 60%;
+        left: 50%;
         top: 0%;
     }
     70% {
-        left: 60%;
+        left: 50%;
         top: -5%;
     }
     100% {
-        left: 70%;
+        left: 60%;
         top: -10%;
     }
 }
