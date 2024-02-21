@@ -221,7 +221,20 @@ img {
         transform: rotate(180deg);
     }
 }
+@media screen and (max-width: 768px) {
+    .circle1 {
+        display: none; 
+    }
 
+    .triangle {
+        display: none; 
+    }
+    .shape {
+        width: 150px;
+        height: 150px;
+        top: 500px;
+    }
+}
 
 /* About 區塊樣式*/
 
@@ -523,6 +536,13 @@ h2 {
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .company-logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .job-title {
     font-weight: bold;
     font-size: 20px;
@@ -614,7 +634,7 @@ h2 {
 /* Contact */
 
 #Contact {
-    padding: 100px 0;
+    padding: 80px 0;
     background-image: linear-gradient(to right top, #913dbe, #af55c3, #c86eca, #df88d2, #f2a3dc);
 }
 
