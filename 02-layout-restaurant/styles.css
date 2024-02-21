@@ -224,7 +224,7 @@ li {
     z-index: 3; 
     opacity: 0; 
     transition: opacity .5s ease; 
-    background-image: url('/src/x.png'); 
+    background-image: url('/src/x.jpg'); 
     background-size: 45%;
     background-position: center ; 
 }
@@ -284,7 +284,7 @@ li {
     z-index: 3; 
     opacity: 0; 
     transition: opacity .5s ease; 
-    background-image: url('/src/Facebook.png'); 
+    background-image: url('/src/Facebook.jpg'); 
     background-size: 60%;
     background-position: center ; 
 }
