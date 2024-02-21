@@ -224,7 +224,7 @@ li {
     z-index: 3; 
     opacity: 0; 
     transition: opacity .5s ease; 
-    background-image: url('/src/x.jpg'); 
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg'); 
     background-size: 45%;
     background-position: center ; 
 }
@@ -254,7 +254,7 @@ li {
     z-index: 3; 
     opacity: 0; 
     transition: opacity .5s ease; 
-    background-image: url('/src/instagram.webp'); 
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg'); 
     background-size: 70%;
     background-position: center ; 
 }
@@ -284,7 +284,7 @@ li {
     z-index: 3; 
     opacity: 0; 
     transition: opacity .5s ease; 
-    background-image: url('/src/Facebook.jpg'); 
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg'); 
     background-size: 60%;
     background-position: center ; 
 }
