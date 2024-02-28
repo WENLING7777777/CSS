@@ -3,14 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="fbefda">
+    <meta data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
     <title>天然食堂</title>
     <link rel="icon" type="image" href="/src/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="page">
+    <div id="page" class="page">
+        <p class="menuButton">
+            <button class="mobileMenu">
+                <span class="menuButton-circle">
+                    <span class="defaultLines"></span>
+                    <span class="activeLines"></span>
+                </span>
+                <span class="menuButton-label">
+                    <div class="label-inner">
+                        <span class="label-menu">MENU</span>
+                        <span class="label-close">CLOSE</span>
+                    </div>
+                </span>
+            </button>
+        </p>
+       <div>
+            <header class="header">
+                <h1 class="header-logo">
+                    <a href="/">
+                        <img src="https://cafuu-shokudou.com/_nuxt/img/logo.70cbfb2.svg" alt="天然食堂">
+                    </a>
+                </h1>
+                <p class="header-snsAnchor">
+                    <a href="#" class="snsAnchor-link">
+                        <img src="https://cafuu-shokudou.com/_nuxt/img/header_sns_anchor_label_sm.e438074.svg" alt="OFFICIAL" loading="lazy">
+                    </a>
+                </p>
+            </header>
+        </div>
+        <main class="l-main">
+            <div class="first-view">
+                <div class="first-view-main">
+                    <div class="main-visual">
+                        <div class="mobile-view-contents">
+                            <p class="view-contents-sub">
+                                <img src="https://cafuu-shokudou.com/_nuxt/img/main_visual_sub_copy_sm.2f198b9.svg">
+                            </p>
+                            <p class="view-contents-main">
+                                <img src="https://cafuu-shokudou.com/_nuxt/img/main_visual_copy_sm.e81991b.svg">
+                            </p>
+                        </div>
+                        <div class="main-view-movie">
+                            <video src="https://cafuu-shokudou.com/_nuxt/videos/fv_movie.caa5c7a.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline></video>
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <a href="#" class="recommendation-link">
+                            <div class="recommendation-image">
+                                <div class="recommendation-inner">
+                                    <img src="https://cafuu-shokudou.com/_nuxt/img/fv_recommendation_image_02_sm@2x.9215c67.jpg">
+                                </div>
+                            </div>
+                            <div class="recommendation-contents">
+                                <div class="mobile-re-header">
+                                    <p class="mobile-re-sub">
+                                        <img src="https://cafuu-shokudou.com/_nuxt/img/fv_recommendation_sub_heading.c8d9ebc.svg">
+                                    </p>
+                                    <p class="mobile-re-head">
+                                        今日のお疲れさまの一杯
+                                    </p>
+                                </div>
+                                <p class="recommendation-name">
+                                    箕面ビール
+                                </p>
+                            </div>
+                            <div></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 左側navigation -->
         <div>
-            <!-- 左側navigation -->
             <header>
                 <h1>
                     <a href="/" class="logo">
@@ -362,7 +435,7 @@
                                     <img src="https://cafuu-shokudou.com/_nuxt/img/gallery_image_02_md@2x.d6fcc25.jpg">
                                 </div>
                                 
-
+x
                             </div>
                             <div class="gallery-main">
                                 <p class="gallery-body">
@@ -531,6 +604,21 @@
         </div>
     </div> 
     <script>
+        // * mobile
+        document.addEventListener('DOMContentLoaded', function() {
+    // 获取菜单按钮元素
+    const mobileMenuButton = document.querySelector('.mobileMenu');
+
+    // 监听菜单按钮的点击事件
+    mobileMenuButton.addEventListener('click', function() {
+        // 切换菜单按钮的活动状态
+        mobileMenuButton.classList.toggle('active');
+    });
+});
+
+
+
+        // *desk
         // -- 跳出視窗 --
         const noticeLink = document.querySelector('.notice-link');
         const fullscreen = document.querySelector('.fullscreen');
