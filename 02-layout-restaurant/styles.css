@@ -19,13 +19,13 @@ html {
 }
 body {
     font-family: YakuHanJP_Noto,"Noto Sans JP",sans-serif;
-    font-display: swap;
+    /* font-display: swap; */
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    background-size: 250px;
-    background-repeat: repeat;
+    /* background-size: 250px;
+    background-repeat: repeat; */
     background-color: #fbf0db;
     overflow-x: hidden;
 }
@@ -267,7 +267,10 @@ p {
 }
 /* 在手機/平板上顯示 */
 @media screen and (max-width: 767px) {
-    
+    /* body {
+        overflow: hidden !important;
+        overflow-x: hidden !important;
+    } */
     .menuButton {
         display: flex;
         margin: 15% 5% 0 0;
